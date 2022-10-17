@@ -1,0 +1,48 @@
+{
+  "name": "nextjs-with-typescript",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "preinstall": "npm run ca:online",
+    "ca:online": "aws codeartifact login --tool npm --repository xld-sdk-tf --domain xld",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "@solana/wallet-adapter-coinbase": "^0.1.12",
+    "@solana/wallet-adapter-phantom": "^0.9.16",
+    "@solana/web3.js": "^1.63.1",
+    "@web3-react/core": "^8.0.35-beta.0",
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/contracts": "^5.7.0",
+    "@ethersproject/providers": "^5.7.1",
+    "@ethersproject/units": "^5.7.0",
+    "@solana/spl-token": "^0.3.5",
+    "@solana/wallet-adapter-base": "^0.9.10",
+    "@solana/wallet-adapter-react": "^0.15.9",
+    "@solana/wallet-adapter-wallets": "^0.17.2",
+    "@walletconnect/ethereum-provider": "^1.7.5",
+    "@web3-react/metamask": "^8.0.28-beta.0",
+    "@web3-react/walletconnect": "^8.0.35-beta.0",
+    "@xld/wallet": "^0.0.1",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  }
+}
